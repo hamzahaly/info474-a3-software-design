@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gantt Chart Reusability</title>
+    
+    <!--Libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.css" />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!--CSS Files-->
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!--Custom JS Script Files-->
+    <script src="js/main.js"></script>
+    <script src="js/gantt.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Gantt Chart Reusability</h1>
+        <a class="waves-effect waves-light btn">Change Data</a>
+        <a id="colorchange" class="waves-effect waves-light btn">Change Colors</a>
+        <!-- Switch -->
+        <div class="switch">
+            <label>
+            Legend Off
+            <input id="check" type="checkbox">
+            <span class="lever"></span>
+            Legend On
+            </label>
+        </div>
+        <div id="viz"></div>
+    </div>
+</body>
+</html>
